@@ -11,9 +11,12 @@ int main()
 
   printf("\n\nEste programa calcula a area de um circulo!");
   printf("\n\nDigite o valor do raio do circulo: ");
-  scanf("%d", &raio);
+  scanf("%lf", &raio);
 
   area = pi * raio * raio;
 
-  printf("\n\nA area do circulo é ", area);
+  printf("\n\nA area do circulo é: %.2lf", area);
+
+  system("pause");
+  return 0;
 }
