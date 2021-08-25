@@ -14,6 +14,7 @@ int main()
   {
     if (num % 7 == 0)
     {
+      printf("  %d", num);
       soma += num;
     }
   }

@@ -8,6 +8,7 @@ int main()
   setlocale(LC_ALL, "Portuguese");
 
   int num, i = 1;
+  float H = 1.0;
 
   printf("Digite um número para gerar o H: ");
   scanf("%d", &num);
@@ -21,10 +22,11 @@ int main()
     else
     {
       printf(" * 1 / %d", i * i);
+      H = H * (1.0 / (i * i));
     }
   }
 
-  printf("\n\n");
+  printf("\n\nO valor de H é %.4f!", H);
 
   system("pause");
   return 0;
